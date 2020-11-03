@@ -66,8 +66,38 @@ PHOTO (AVATAR)
 
 #photo-header {
     margin-top: -75px;
+    position: relative;
 }
+/*o*/
+#photo-header nav { 
+    width: 78px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+#photo-header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+  
+    
+}
+#photo-header nav ul li{
+list-style: none;
+width: 32px;
+}
+#photo-header nav ul li a, #photo-header nav ul li a:hover {
+    text-decoration: none;
 
+}
+#photo-header nav ul li span {
+    font-weight: bold;
+}
 #photo {
     width: auto;
     overflow: hidden;
@@ -76,12 +106,15 @@ PHOTO (AVATAR)
     display: inline-block;
     font-size: 100px;
     color: #1ABC9C;
+    position: relative;
 }
 
-#photo img {
+#photo .avat {
     width: auto;
     height: 143px;
 }
+
+
 
 #text-header h1 {
     margin: 0;
